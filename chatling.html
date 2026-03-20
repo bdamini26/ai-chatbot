@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mood Assistant</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* FULL SCREEN DARK BACKGROUND */
+body {
+  background: #0f172a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* GLOW EFFECT */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  filter: blur(120px);
+  z-index: 0;
+}
+
+body::before {
+  background: #ff00cc;
+  top: -150px;
+  left: -150px;
+}
+
+body::after {
+  background: #00c6ff;
+  bottom: -150px;
+  right: -150px;
+}
+
+/* HERO FULL HEIGHT */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* CARD */
+.card {
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* FEATURES (SECOND SCREEN) */
+.features {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feature {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 15px;
+  width: 220px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  opacity: 0.6;
+}
+
+/* CHAT BUTTON */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 2;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>🌈 Mood Assistant</h1>
+  <p>Your AI companion that understands your emotions</p>
+
+  <div class="card">
+    <h2>Talk to your AI 🤖</h2>
+    <p>Click below and share your feelings 💬</p>
+    <a href="#" class="btn">Start Chat</a>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <h2>✨ What You Get</h2>
+
+  <div class="feature-box">
+    <div class="feature">💬 Instant AI Chat</div>
+    <div class="feature">😊 Mood Detection</div>
+    <div class="feature">⚡ Fast Responses</div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Mood Assistant
+</footer>
+
+<!-- CHAT BUTTON -->
+<div class="chat-button">💬</div>
+
+<script>
+window.chtlConfig = { chatbotId: "7784529183" }
+</script>
+<script async data-id="7784529183" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+<script> window.chtlConfig = { chatbotId: "7784529183" } </script>
+<script async data-id="7784529183" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+</body>
+</html>
