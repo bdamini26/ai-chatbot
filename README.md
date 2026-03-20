@@ -19,10 +19,8 @@ An interactive AI chatbot that understands user moods and responds accordingly.
 3. AI responds with appropriate message
 
 ## 🌐 Live Preview
-(You can add your GitHub Pages link here)
 
-## 📁 Project Structure
 <img width="2230" height="1385" alt="Screenshot 2026-03-21 025843" src="https://github.com/user-attachments/assets/1aed1330-498d-46cc-b8ba-aedda01dd676" />
-## 👩‍💻 Author
+👩‍💻 Author
 Damini
 
